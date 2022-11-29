@@ -6,3 +6,5 @@ just unit
 just test
 just run
 just dev
+
+Set up auto-build
