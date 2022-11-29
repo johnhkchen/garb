@@ -1,0 +1,8 @@
+Add a justfile
+
+Install Instructions
+Dev Container Usage Instructions
+just unit
+just test
+just run
+just dev
