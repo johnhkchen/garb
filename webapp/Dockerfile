@@ -13,6 +13,12 @@ RUN rm cargo-binstall-x86_64-unknown-linux-musl.tgz
 # Install just, our command runner tool
 RUN cargo binstall just -y
 
+# Install Web App Frameworks
+# Set WASM target for Rust
+RUN rustup target add wasm32-unknown-unknown 
+# Install Trunk - WASM web app bundler
+RUN cargo binstall trunk -y
+
 # Install oh-my-zsh, a shiny terminal with autocomplete
 RUN apt-get update
 RUN apt-get install zsh -y
