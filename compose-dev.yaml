@@ -3,7 +3,7 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: rust:latest
+    dockerfile: ./Dockerfiles/Dockerfile-dev
     init: true
     volumes:
     - type: bind
