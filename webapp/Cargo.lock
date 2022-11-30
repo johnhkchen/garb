@@ -147,6 +147,7 @@ dependencies = [
 name = "garb"
 version = "0.1.0"
 dependencies = [
+ "web-sys",
  "yew",
 ]
 
