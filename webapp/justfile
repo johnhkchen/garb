@@ -1,6 +1,10 @@
 hello:
   @echo "Welcome! You're almost there!"
 
+# Starts up our dev server
+start:
+  trunk serve
+
 # When you checkout a new container, you can run this to create a dev branch
 newdev:
   git checkout -b dev origin/main
