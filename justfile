@@ -16,6 +16,10 @@ branch branch_name:
   git checkout -b {{branch_name}} dev
   git push --set-upstream origin {{branch_name}}
 
+# Cleans up the branches that accumulate over time
+prune:
+  git fetch --prune origin
+  
 # Create dev container
 build:
   cargo build

@@ -30,6 +30,14 @@ Set-up Instructions
 2. Make your changes, using `just test` and `just lint`
 3. Once changes are made, push your commits and open a pull request
 
+### Development Loop
+Pull request dev into main
+`just newdev` 
+`just branch feature_name`
+Make changes, push commits
+Pull request feature_name into dev
+
+
 [//]: # (3. Run `just demo` to do a couple of things!)
 
 [//]: # (### Set-up Instructions - Development)
