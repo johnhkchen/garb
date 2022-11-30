@@ -8,7 +8,7 @@ newdev:
   git pull
   git branch -d dev
   git checkout -b dev
-  git push --set-upstream origin
+  git push --set-upstream origin dev
 
 branch branch_name:
   git checkout -b {{branch_name}} origin/dev
