@@ -19,10 +19,16 @@ Set-up Instructions
 
 `just` is a tool that allows us to run commands in a simple way.
 
-### Process Overview - Development
-1. Clone the Repo
-2. Run Docker Desktop
-3. Use a Dev Container
+### Process Overview - Spinning up a Dev Container
+1. Open Docker Desktop
+2. Use a dev container, point it to this repo
+3. Use the Open in VSCode option
+4. Just `just build` and `just run` to execute the existing code
+
+### Process Overview - Making Changes with a Dev Container
+1. Create a new dev branch using `just branch`, be sure to provide a branch name
+2. Make your changes, using `just test` and `just lint`
+3. Once changes are made, push your commits and open a pull request
 
 [//]: # (3. Run `just demo` to do a couple of things!)
 
