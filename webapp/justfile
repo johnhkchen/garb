@@ -3,7 +3,11 @@ hello:
 
 # Sync to main branch, run after completing a PR
 # Starting from "dev" branch
+# Don't run this if you're not willing to lose your dev branch!
 newdev:
+  git checkout main
+  git pull
+  git branch -D dev
   git checkout -b dev origin/main
   git push --set-upstream origin dev
 
