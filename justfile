@@ -13,7 +13,7 @@ newdev:
 branch branch_name:
   @echo "Creating a fresh dev branch named {{branch_name}}..."
   git status
-  git checkout -b {{branch_name}} dev
+  git checkout -b {{branch_name}} origin/dev
   git push --set-upstream origin {{branch_name}}
 
 # Cleans up the branches that accumulate over time
@@ -27,9 +27,20 @@ build:
 test:
   cargo test
 
+lint:
+  @echo "Nothin' yet"
+
 run:
   cargo run
 
+# Open a PR for the current branch onto dev. You will need gh installed and authenticated.
+pr_dev:
+  gh pr create -B dev
+
+# Run this from the dev branch or the PR will be rejected. You will need gh installed and authenticated.
+pr_main:
+  gh pr create --fill
+  
 serve:
   @echo "In the future this will start the dev server!"
 
