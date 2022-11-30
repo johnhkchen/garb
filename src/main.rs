@@ -1,3 +1,3 @@
 fn main() {
-    println!("I will soon be a web app!");
+    println!("Hello! I am Garb, and I will soon be a web app!");
 }
