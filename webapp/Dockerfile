@@ -13,7 +13,15 @@ RUN rm cargo-binstall-x86_64-unknown-linux-musl.tgz
 # Install just, our command runner tool
 RUN cargo binstall just -y
 
+# Install shiny terminal
+RUN apt-get update
+RUN apt-get install zsh
+ENV SHELL=/bin/zsh
+RUN chsh -s $(which zsh)
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Copy in working repo
 WORKDIR /usr/src/garb
 COPY . .
 
-CMD ["bash"]
+CMD ["zsh"]
