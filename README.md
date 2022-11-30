@@ -23,7 +23,7 @@ Set-up Instructions
 1. Open Docker Desktop
 2. Use a dev container, point it to this repo
 3. Use the Open in VSCode option
-4. Just `just build` and `just run` to execute the existing code
+4. Use the `just run` command to run the codebase
 
 ### Process Overview - Making Changes with a Dev Container
 1. Create a new dev branch using `just branch`, be sure to provide a branch name
