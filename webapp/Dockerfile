@@ -11,7 +11,7 @@ RUN tar zxvf cargo-binstall-x86_64-unknown-linux-musl.tgz -C $CARGO_HOME/bin/
 RUN rm cargo-binstall-x86_64-unknown-linux-musl.tgz
 
 # Install just, our command runner tool
-RUN cargo binstall just
+RUN cargo binstall just -y
 
 WORKDIR /usr/src/garb
 COPY . .
