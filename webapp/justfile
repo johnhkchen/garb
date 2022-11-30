@@ -18,6 +18,7 @@ prune:
 sync_main:
   git checkout main
   git pull
+  git branch -d dev
 
 # Create dev container
 build:
