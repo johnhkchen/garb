@@ -3,7 +3,7 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: rust:latest
+    image: johnhkchen/just_rust_dev:alpha
     init: true
     volumes:
     - type: bind

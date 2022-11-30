@@ -27,3 +27,9 @@ run:
 
 serve:
   @echo "In the future this will start the dev server!"
+
+docker_build:
+  docker build -t johnhkchen/just_rust_dev:alpha .
+
+docker_dev:
+  docker run -it --rm --name my-rust-app johnhkchen/just_rust_dev:alpha
