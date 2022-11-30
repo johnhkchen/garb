@@ -28,7 +28,7 @@ Set-up Instructions
 ### Process Overview - Making Changes with a Dev Container
 1. Create a new dev branch using `just branch`, be sure to provide a branch name
 2. Make your changes, using `just test` and `just lint`
-3. Once changes are made, push your commits and open a pull request using `gh pr create -B dev`
+3. Once changes are made, push your commits and open a pull request
 
 [//]: # (3. Run `just demo` to do a couple of things!)
 
