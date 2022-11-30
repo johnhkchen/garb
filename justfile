@@ -8,6 +8,7 @@ newdev:
   git pull
   git branch -d dev
   git checkout -b dev
+  git push --set-upstream origin
 
 branch branch_name:
   @echo "Creating a fresh dev branch named {{branch_name}}..."
