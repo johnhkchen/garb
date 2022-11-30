@@ -4,10 +4,7 @@ hello:
 # Sync to main branch, run after completing a PR
 # Starting from "dev" branch
 newdev:
-  git checkout main
-  git pull
-  git branch -d dev
-  git checkout -b dev
+  git checkout -b dev origin/main
   git push --set-upstream origin dev
 
 branch branch_name:
