@@ -15,7 +15,7 @@ RUN cargo binstall just -y
 
 # Install shiny terminal
 RUN apt-get update
-RUN apt-get install zsh
+RUN apt-get install zsh -y
 ENV SHELL=/bin/zsh
 RUN chsh -s $(which zsh)
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
