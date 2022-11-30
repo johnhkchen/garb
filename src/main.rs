@@ -1,4 +1,3 @@
 fn main() {
-    println!("Hello, Dockerized World...?");
-    println!("I can't wait!");
+    println!("I will soon be a web app!");
 }
