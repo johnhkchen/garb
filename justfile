@@ -13,7 +13,7 @@ branch branch_name:
   @echo "Creating a fresh dev branch named {{branch_name}}..."
   git status
   git checkout -b {{branch_name}} dev
-  git status
+  git push
 
 # Create dev container
 build:
