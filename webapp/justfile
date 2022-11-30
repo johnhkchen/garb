@@ -14,6 +14,11 @@ branch branch_name:
 prune:
   git fetch --prune origin
 
+# Go back to main branch, pull to update everything
+sync_main:
+  git checkout main
+  git pull
+
 # Create dev container
 build:
   cargo build
