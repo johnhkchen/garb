@@ -40,6 +40,7 @@ pr_dev:
 # Run this from the dev branch or the PR will be rejected. You will need gh installed and authenticated.
 pr_main:
   gh pr create --fill
+  
 serve:
   @echo "In the future this will start the dev server!"
 
