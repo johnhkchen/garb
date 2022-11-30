@@ -1,13 +1,8 @@
 hello:
   @echo "Welcome! You're almost there!"
 
-# Sync to main branch, run after completing a PR
-# Starting from "dev" branch
-# Don't run this if you're not willing to lose your dev branch!
+# When you checkout a new container, you can run this to create a dev branch
 newdev:
-  git checkout main
-  git pull
-  git branch -D dev
   git checkout -b dev origin/main
   git push --set-upstream origin dev
 
@@ -18,7 +13,7 @@ branch branch_name:
 # Cleans up the branches that accumulate over time
 prune:
   git fetch --prune origin
-  
+
 # Create dev container
 build:
   cargo build
