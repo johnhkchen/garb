@@ -8,8 +8,14 @@ branch branch_name:
   git status
 
 # Create dev container
-up:
-  docker build -t garb:dev .
+build:
+  cargo build
+
+test:
+  cargo test
 
 run:
-  docker run -it --rm --name garb-dev-app garb:dev
+  cargo run
+
+serve:
+  @echo "In the future this will start the dev server!"
