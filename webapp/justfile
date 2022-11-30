@@ -11,8 +11,6 @@ newdev:
   git push --set-upstream origin
 
 branch branch_name:
-  @echo "Creating a fresh dev branch named {{branch_name}}..."
-  git status
   git checkout -b {{branch_name}} origin/dev
   git push --set-upstream origin {{branch_name}}
 
